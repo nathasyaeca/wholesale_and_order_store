@@ -42,7 +42,6 @@ frames, which is:
 6.  created visualization of each profit based on `product category`
     (arrange it from the higher to smaller).
 
-===
 
 ## Import and Wrangling the data
 
@@ -111,6 +110,7 @@ order_product %>%
 ```
 
 ![](wholesale_store_files/figure-gfm/average%20shopping%20history-1.png)<!-- -->
+
 The line looks fluctuation through each years. While in the `August` the
 product sold the lowest, but every end of the month (between `November`
 to `December`) the sold record are highest. And they slump down again in
