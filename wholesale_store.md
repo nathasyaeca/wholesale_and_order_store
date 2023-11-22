@@ -132,7 +132,7 @@ order_product %>%
     ## 2 Gold                          1.05
     ## 3 Platinum                      1.08
 
-Seems there’s no big differences between `Platinum`, `Gold`, and
+So now we know that there's no apparant differences of how long the packages arrive between `Platinum`, `Gold`, and
 `Silver` membership.
 
 ``` r
@@ -266,7 +266,7 @@ order_product %>%
 
 ![](wholesale_store_files/figure-gfm/average%20total%20shopping%20based%20on%20customer%20status-1.png)<!-- -->
 
-The difference didn’t see clearly. Let’s put it in the table instead.
+It hard to see the different clearly. Let’s put it in the tibble instead.
 
 ``` r
 order_product %>%
