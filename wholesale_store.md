@@ -256,7 +256,7 @@ order_product %>%
   geom_col(width = .7,show.legend = F) +
   theme_linedraw() +
   theme(text = element_text(family = "Constantia")) +
-  scale_fill_manual(values = c("#f9f298", "#E5E4E2", "#EAFAFD")) +
+  scale_fill_manual(values = c("#EAFAFD", "#E5E4E2", "#f9f298")) +
   labs(x = "",
        y = "Average Spending",
        title = "Average Total Spending Based on Customers Status Members")
