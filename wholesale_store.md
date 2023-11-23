@@ -132,8 +132,7 @@ order_product %>%
     ## 2 Gold                          1.05
     ## 3 Platinum                      1.08
 
-So now we know that there's no apparant differences of how long the packages arrive between `Platinum`, `Gold`, and
-`Silver` membership.
+This is quite interesting finding. From tibble above, we know that `Silver` average order arrived to the customers is much faster than `Platinum` membership. We need to find futher research (and alot of more data) why this happened.
 
 ``` r
 # see what day customers orders the most
@@ -257,8 +256,7 @@ order_product %>%
   geom_col(width = .7,show.legend = F) +
   theme_linedraw() +
   theme(text = element_text(family = "Constantia")) +
-  scale_fill_manual(breaks = c("Silver", "Gold", "Platinum"),
-                    values = c("#f9f298", "#E5E4E2", "#EAFAFD")) +
+  scale_fill_manual(values = c("#f9f298", "#E5E4E2", "#EAFAFD")) +
   labs(x = "",
        y = "Average Spending",
        title = "Average Total Spending Based on Customers Status Members")
@@ -297,7 +295,7 @@ group of `customer status` membership. This means customer with
     us have the higher profitable wholesaler supplier. While the product
     that they sold are; Shoes, clothes, children sport, and winter
     sport.
-4.  THe different between product that sold the most profit and product
+4.  The different between product that sold the most profit and product
     that customers brought the most are not that conspicious. While we
     still get 2x of profit each time the product sold, but we need to
     push `Clothes` product more, cause they bring the most profitable
@@ -306,5 +304,5 @@ group of `customer status` membership. This means customer with
     groups of `customer status` member. Company need to give customers
     some benefit why they need to upgrade their membership, and give
     some special offers for `Platinum` membership.
-
+    
 ===
