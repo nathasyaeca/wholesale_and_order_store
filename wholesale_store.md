@@ -252,11 +252,12 @@ nine).
 order_product %>%
   group_by(`customer status`) %>% 
   summarize(mean = mean(`total price`)) %>% 
-  ggplot(aes(reorder(`customer status`, mean), mean, fill = `customer status`)) +
+  ggplot(aes(`customer status`, mean, fill = `customer status`)) +
   geom_col(width = .7,show.legend = F) +
   theme_linedraw() +
   theme(text = element_text(family = "Constantia")) +
-  scale_fill_manual(values = c("#EAFAFD", "#E5E4E2", "#f9f298")) +
+  scale_fill_manual(breaks = c("Gold", "Silver", "Platinum"),
+                    values = c("#f9f298", "#EAFAFD", "#E5E4E2")) +
   labs(x = "",
        y = "Average Spending",
        title = "Average Total Spending Based on Customers Status Members")
